@@ -1,0 +1,25 @@
+<ion-header-bar  class="bar-positive">
+  <div class="buttons">
+    
+  </div>
+  <h1 class="title">Aseguradoras</h1>
+  <div class="buttons">
+    <button class="button icon ion-plus-round" ui-sref="app.crear"></button>
+  </div>
+</ion-header-bar>
+
+<ion-content>
+
+
+    <ion-list >
+        <ion-item ng-repeat="aseguradora in asegura" ui-sref="app.detalle({aseguradoraId:aseguradora.id})">
+        {{aseguradora.nombre}}
+        </ion-item>
+        
+    </ion-list>
+
+    
+   
+    
+
+</ion-content>
